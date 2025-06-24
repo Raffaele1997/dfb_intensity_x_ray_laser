@@ -4,7 +4,7 @@ import pandas as pd
 from matplotlib.colors import LogNorm
 from matplotlib.ticker import LogFormatter
 
-# Import CSV file for MgO
+# Import CSV file for MgO or any other material
 path  = r'/Users/raffaele/PycharmProjects/Bachelorthesis/Gain_Planes/MgO/mgo_planes_gain.csv'
 mgo = pd.read_csv(path)
 
