@@ -157,3 +157,6 @@ class DFBLaserSimulation:
 #     sim = DFBLaserSimulation(planes[det], n_1[det], kappa[det], wavelength[det])
 #     sim.run()
 #     sim.save_and_plot(base_path)
+
+
+

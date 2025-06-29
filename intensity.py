@@ -1,8 +1,15 @@
 import numpy as np
+
+#if your IDE does not show "beautiful" graphs use this:
+#----------------------------------------
+#import matplotlib
+#matplotlib.use('Qt5Agg') #For visualisation
+#----------------------------------------
 import matplotlib.pyplot as plt
 import pandas as pd
 from matplotlib.colors import LogNorm
 from matplotlib.ticker import LogFormatter
+
 
 # Import CSV file for MgO or any other material
 path  = r'/Users/raffaele/PycharmProjects/Bachelorthesis/Gain_Planes/MgO/mgo_planes_gain.csv'
@@ -47,7 +54,7 @@ for det in range(len(planes)):
         wave = factor * WAVELENGTH_0
         # avoid exactly wave == WAVELENGTH_0 if denominator used;
         # in practice factors avoids exactly 1.0 if needed.
-        z = np.linspace(-L / 2, L / 2, 3000)
+        z = np.linspace(-L / 2, L / 2, 1000)
         intensity = np.abs(E(z, L, wave))
         # Normalize at z = -L/2; ensure intensity[0] != 0
         if intensity[0] != 0:
@@ -76,17 +83,17 @@ for det in range(len(planes)):
         extent=[x_dev.min(), x_dev.max(), lengths.min(), lengths.max()],
         aspect='auto',
         origin='lower',
-        cmap='inferno',
+        cmap='viridis',
         norm=LogNorm(vmin=0.9*threshold, vmax=1),
         interpolation='gaussian'
     )
 
-    # Vertical line at deviation = 0 (i.e., at WAVELENGTH_0)
+    # Vertical line at deviation = 0 (at WAVELENGTH_0)
     ax.axvline(0, linestyle='--', color='gray')
 
     # Axis labels and title
     ax.set_xlabel(f'Detuning (nm) from Bragg Wavelength $λ_0=$ {WAVELENGTH_0:.3f} nm')
-    ax.set_ylabel('Gain Length $L$ (nm)')
+    ax.set_ylabel(r'Gain Length $L$ ({0:s})'.format("nm"))
     ax.set_title('Intensity Map of DFB Laser, plane ' + planes[det])
 
     # Secondary x-axis to show absolute wavelength
@@ -123,3 +130,5 @@ for det in range(len(planes)):
     df.to_csv(csv_path)
 
     plt.close(fig)
+
+
