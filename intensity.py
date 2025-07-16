@@ -1,22 +1,29 @@
 import numpy as np
-
-#if your IDE does not show "beautiful" graphs use this:
-#----------------------------------------
-#import matplotlib
-#matplotlib.use('Qt5Agg') #For visualisation
-#----------------------------------------
 import matplotlib.pyplot as plt
 import pandas as pd
 from matplotlib.colors import LogNorm
 from matplotlib.ticker import LogFormatter
 
-
 # Import CSV file for MgO or any other material
 path  = r'/Users/raffaele/PycharmProjects/Bachelorthesis/Gain_Planes/MgO/mgo_planes_gain.csv'
 mgo = pd.read_csv(path)
 
+#If  already done comment this script out (for calculating kappa and n_1 for other planes)
+
+F_111 = mgo['|F|']
+n_111 = mgo['Refractive_index_modulation'][0]
+
+#Adding the refractive index and coupling constant per plane by using the relation n_1'/n_1 = F'/F
+for i in range(1,len(mgo)):
+    #Adding refractive index
+    mgo.at[i,'Refractive_index_modulation'] = n_111*F_111[i]/F_111[0]
+    #Adding coupling constant with relation
+    mgo.at[i, 'Coupling_constant'] = np.pi * mgo.at[i,'Refractive_index_modulation']/mgo.at[i,'Wavelengths']
+
+print(mgo.head())
+
 n_1 = mgo['Refractive_index_modulation']
-kappa = mgo['kappa']
+kappa = mgo['Coupling_constant']
 wavelength = mgo['Wavelengths']
 planes_ = list(zip(mgo['h'], mgo['k'], mgo['l']))
 planes = ["".join(str(x) for x in tpl) for tpl in planes_]
@@ -54,7 +61,7 @@ for det in range(len(planes)):
         wave = factor * WAVELENGTH_0
         # avoid exactly wave == WAVELENGTH_0 if denominator used;
         # in practice factors avoids exactly 1.0 if needed.
-        z = np.linspace(-L / 2, L / 2, 1000)
+        z = np.linspace(-L / 2, L / 2, 3000)
         intensity = np.abs(E(z, L, wave))
         # Normalize at z = -L/2; ensure intensity[0] != 0
         if intensity[0] != 0:
@@ -83,18 +90,18 @@ for det in range(len(planes)):
         extent=[x_dev.min(), x_dev.max(), lengths.min(), lengths.max()],
         aspect='auto',
         origin='lower',
-        cmap='viridis',
+        cmap='YlOrBr',
         norm=LogNorm(vmin=0.9*threshold, vmax=1),
         interpolation='gaussian'
     )
 
-    # Vertical line at deviation = 0 (at WAVELENGTH_0)
+    # Vertical line at deviation = 0 (i.e., at WAVELENGTH_0)
     ax.axvline(0, linestyle='--', color='gray')
 
     # Axis labels and title
-    ax.set_xlabel(f'Detuning (nm) from Bragg Wavelength $λ_0=$ {WAVELENGTH_0:.3f} nm')
-    ax.set_ylabel(r'Gain Length $L$ ({0:s})'.format("nm"))
-    ax.set_title('Intensity Map of DFB Laser, plane ' + planes[det])
+    ax.set_xlabel(f'Detuning from Bragg Wavelength $λ_0=$ {WAVELENGTH_0:.3f} nm')
+    ax.set_ylabel('Gain Length $L$ (nm)')
+    ax.set_title('Intensity Map of MgO, Plane ' + planes[det])
 
     # Secondary x-axis to show absolute wavelength
     def dev_to_abs(x_dev_val):
@@ -102,8 +109,8 @@ for det in range(len(planes)):
     def abs_to_dev(x_abs_val):
         return x_abs_val - WAVELENGTH_0
 
-    secax = ax.secondary_xaxis('top', functions=(dev_to_abs, abs_to_dev))
-    secax.set_xlabel('Absolute Wavelength $λ$(nm)')
+    #secax = ax.secondary_xaxis('top', functions=(dev_to_abs, abs_to_dev))
+    #secax.set_xlabel('Absolute Wavelength $λ$(nm)')
 
     # Colorbar with log formatter
     cbar = fig.colorbar(img, ax=ax, format=LogFormatter(base=10))
@@ -130,5 +137,3 @@ for det in range(len(planes)):
     df.to_csv(csv_path)
 
     plt.close(fig)
-
-
