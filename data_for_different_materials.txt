@@ -1,0 +1,837 @@
+# Material Properties Database
+# 
+# Each material entry starts with the symbol.
+# Contains data for Miller indices, unit cell dimensions, unit cell angles, 
+# number and type of unit cell atoms, positions of atoms in unit cell, and 
+# resonant wavelength in angstrom.
+# Angles are in degrees, dimensions in angstrom, positions relative to unit
+# cell dimensions.
+#
+
+Material: CdTe
+Miller: 1 1 1
+Dimensions: 6.48 6.48 6.48
+Angles: 90 90 90
+Wavelength: 7.48
+Electrons: 48 52
+Positions: 
+    Cd 0 0 0
+    Cd 0.5 0.5 0
+    Cd 0.5 0 0.5
+    Cd 0 0.5 0.5
+    Te 0.25 0.25 0.25
+    Te 0.75 0.75 0.25
+    Te 0.75 0.25 0.75
+    Te 0.25 0.75 0.75
+
+Material: InSb
+Miller: 1 1 1
+Dimensions: 6.48 6.48 6.48
+Angles: 90 90 90
+Wavelength: 7.48
+Electrons: 49 51
+Positions: 
+    In 0 0 0
+    In 0.5 0.5 0
+    In 0.5 0 0.5
+    In 0 0.5 0.5
+    Sb 0.25 0.25 0.25
+    Sb 0.75 0.75 0.25
+    Sb 0.75 0.25 0.75
+    Sb 0.25 0.75 0.75
+
+Material: PbTe
+Miller: 1 1 1
+Dimensions: 6.46 6.46 6.46
+Angles: 90 90 90
+Wavelength: 7.46
+Electrons: 82 52
+Positions: 
+    Pb 0 0 0
+    Pb 0.5 0.5 0
+    Pb 0.5 0 0.5
+    Pb 0 0.5 0.5
+    Te 0 0.5 0 
+    Te 0.5 0 0
+    Te 0 0 0.5
+    Te 0.5 0.5 0.5
+
+Material: GaSb
+Miller: 1 1 1
+Dimensions: 6.1 6.1 6.1
+Angles: 90 90 90
+Wavelength: 7.04
+Electrons: 31 51
+Positions: 
+    Ga 0 0 0
+    Ga 0.5 0.5 0
+    Ga 0.5 0 0.5
+    Ga 0 0.5 0.5
+    Sb 0.25 0.25 0.25
+    Sb 0.75 0.75 0.25
+    Sb 0.75 0.25 0.75
+    Sb 0.25 0.75 0.75
+
+Material: InAs
+Miller: 1 1 1
+Dimensions: 6.06 6.06 6.06
+Angles: 90 90 90
+Wavelength: 7.00
+Electrons: 49 33
+Positions: 
+    In 0 0 0
+    In 0.5 0.5 0
+    In 0.5 0 0.5
+    In 0 0.5 0.5
+    As 0.25 0.25 0.25
+    As 0.75 0.75 0.25
+    As 0.75 0.25 0.75
+    As 0.25 0.75 0.75
+
+Material: CdSe
+Miller: 1 1 1
+Dimensions: 6.05 6.05 6.05
+Angles: 90 90 90
+Wavelength: 6.99
+Electrons: 48 34
+Positions: 
+    Cd 0 0 0
+    Cd 0.5 0.5 0
+    Cd 0.5 0 0.5
+    Cd 0 0.5 0.5
+    Se 0.25 0.25 0.25
+    Se 0.75 0.75 0.25
+    Se 0.75 0.25 0.75
+    Se 0.25 0.75 0.75
+
+Material: PbS
+Miller: 1 1 1
+Dimensions: 5.94 5.94 5.94
+Angles: 90 90 90
+Wavelength: 6.86
+Electrons: 82 16
+Positions: 
+    Pb 0 0 0
+    Pb 0.5 0.5 0
+    Pb 0.5 0 0.5
+    Pb 0 0.5 0.5
+    S 0 0.5 0 
+    S 0.5 0 0
+    S 0 0 0.5
+    S 0.5 0.5 0.5
+
+Material: InP
+Miller: 1 1 1
+Dimensions: 5.87 5.87 587
+Angles: 90 90 90
+Wavelength: 6.78
+Electrons: 49 15
+Positions: 
+    In 0 0 0
+    In 0.5 0.5 0
+    In 0.5 0 0.5
+    In 0 0.5 0.5
+    P 0.25 0.25 0.25
+    P 0.75 0.75 0.25
+    P 0.75 0.25 0.75
+    P 0.25 0.75 0.75
+
+Material: CdS
+Miller: 1 1 1
+Dimensions: 5.83 5.83 5.83
+Angles: 90 90 90
+Wavelength: 6.73
+Electrons: 48 16
+Positions: 
+    Cd 0 0 0
+    Cd 0.5 0.5 0
+    Cd 0.5 0 0.5
+    Cd 0 0.5 0.5
+    S 0.25 0.25 0.25
+    S 0.75 0.75 0.25
+    S 0.75 0.25 0.75
+    S 0.25 0.75 0.75
+
+Material: AlAs
+Miller: 1 1 1
+Dimensions: 5.66 5.66 5.66
+Angles: 90 90 90
+Wavelength: 6.54
+Electrons: 13 33
+Positions: 
+    Al 0 0 0
+    Al 0.5 0.5 0
+    Al 0.5 0 0.5
+    Al 0 0.5 0.5
+    As 0.25 0.25 0.25
+    As 0.75 0.75 0.25
+    As 0.75 0.25 0.75
+    As 0.25 0.75 0.75
+
+Material: Ge
+Miller: 1 1 1
+Dimensions: 5.66 5.66 5.66
+Angles: 90 90 90
+Wavelength: 6.54
+Electrons: 32
+Positions: 
+    Ge 0 0 0
+    Ge 0.5 0.5 0
+    Ge 0.5 0 0.5
+    Ge 0 0.5 0.5
+    Ge 0.25 0.25 0.25
+    Ge 0.75 0.75 0.25
+    Ge 0.75 0.25 0.75
+    Ge 0.25 0.75 0.75
+
+Material: GaAs
+Miller: 1 1 1
+Dimensions: 5.65 5.65 5.65
+Angles: 90 90 90
+Wavelength: 6.52
+Electrons: 31 33
+Positions: 
+    Ga 0 0 0
+    Ga 0.5 0.5 0
+    Ga 0.5 0 0.5
+    Ga 0 0.5 0.5
+    As 0.25 0.25 0.25
+    As 0.75 0.75 0.25
+    As 0.75 0.25 0.75
+    As 0.25 0.75 0.75
+
+Material: AlP
+Miller: 1 1 1
+Dimensions: 5.45 5.45 5.45
+Angles: 90 90 90
+Wavelength: 6.29
+Electrons: 13 15
+Positions: 
+    Al 0 0 0
+    Al 0.5 0.5 0
+    Al 0.5 0 0.5
+    Al 0 0.5 0.5
+    P 0.25 0.25 0.25
+    P 0.75 0.75 0.25
+    P 0.75 0.25 0.75
+    P 0.25 0.75 0.75
+
+Material: GaP
+Miller: 1 1 1
+Dimensions: 5.45 5.45 5.45
+Angles: 90 90 90
+Wavelength: 6.29
+Electrons: 31 15
+Positions: 
+    Ga 0 0 0
+    Ga 0.5 0.5 0
+    Ga 0.5 0 0.5
+    Ga 0 0.5 0.5
+    P 0.25 0.25 0.25
+    P 0.75 0.75 0.25
+    P 0.75 0.25 0.75
+    P 0.25 0.75 0.75
+
+Material: Si
+Miller: 1 1 1
+Dimensions: 5.43 5.43 5.43
+Angles: 90 90 90
+Wavelength: 6.27
+Electrons: 14
+Positions: 
+    Si 0 0 0
+    Si 0.5 0.5 0
+    Si 0.5 0 0.5
+    Si 0 0.5 0.5
+    Si 0.25 0.25 0.25
+    Si 0.75 0.75 0.25
+    Si 0.75 0.25 0.75
+    Si 0.25 0.75 0.75
+
+Material: ZnS
+Miller: 1 1 1
+Dimensions: 5.42 5.42 5.42
+Angles: 90 90 90
+Wavelength: 6.26
+Electrons: 30 16
+Positions: 
+    Zn 0 0 0
+    Zn 0.5 0.5 0
+    Zn 0.5 0 0.5
+    Zn 0 0.5 0.5
+    S 0.25 0.25 0.25
+    S 0.75 0.75 0.25
+    S 0.75 0.25 0.75
+    S 0.25 0.75 0.75
+
+Material: CrO
+Miller: 1 1 1
+Dimensions: 4.45 4.45 4.45
+Angles: 90 90 90
+Wavelength: 5.14
+Electrons: 24 8
+Positions: 
+    Cr 0 0 0
+    Cr 0.5 0.5 0
+    Cr 0.5 0 0.5
+    Cr 0 0.5 0.5
+    O 0 0.5 0 
+    O 0.5 0 0
+    O 0 0 0.5
+    O 0.5 0.5 0.5
+
+Material: FeO
+Miller: 1 1 1
+Dimensions: 4.26 4.26 4.26
+Angles: 90 90 90
+Wavelength: 4.92
+Electrons: 26 8
+Positions: 
+    Fe 0 0 0
+    Fe 0.5 0.5 0
+    Fe 0.5 0 0.5
+    Fe 0 0.5 0.5
+    O 0 0.5 0 
+    O 0.5 0 0
+    O 0 0 0.5
+    O 0.5 0.5 0.5
+
+Material: MnO
+Miller: 1 1 1
+Dimensions: 4.45 4.45 4.45
+Angles: 90 90 90
+Wavelength: 5.14
+Electrons: 25 8
+Positions: 
+    Mn 0 0 0
+    Mn 0.5 0.5 0
+    Mn 0.5 0 0.5
+    Mn 0 0.5 0.5
+    O 0 0.5 0 
+    O 0.5 0 0
+    O 0 0 0.5
+    O 0.5 0.5 0.5
+
+Material: CuO
+Miller: 1 1 1
+Dimensions: 4.23 4.23 4.23
+Angles: 90 90 90
+Wavelength: 4.88
+Electrons: 29 8
+Positions: 
+    Cu 0 0 0
+    Cu 0.5 0.5 0
+    Cu 0.5 0 0.5
+    Cu 0 0.5 0.5
+    O 0 0.5 0 
+    O 0.5 0 0
+    O 0 0 0.5
+    O 0.5 0.5 0.5
+
+Material: CuO440
+Miller: 4 4 0
+Dimensions: 4.23 4.23 4.23
+Angles: 90 90 90
+Wavelength: 1.5
+Electrons: 29 8
+Positions: 
+    Cu 0 0 0
+    Cu 0.5 0.5 0
+    Cu 0.5 0 0.5
+    Cu 0 0.5 0.5
+    O 0 0.5 0 
+    O 0.5 0 0
+    O 0 0 0.5
+    O 0.5 0.5 0.5
+
+Material: BiN
+Miller: 1 1 1
+Dimensions: 3.18 3.18 3.18
+Angles: 90 90 90
+Wavelength: 3.67
+Electrons: 83 7
+Positions: 
+    Bi 2 2 2
+    N 2 2 2
+
+Material: ScN
+Miller: 1 1 1
+Dimensions: 4.51 4.51 4.51
+Angles: 90 90 90
+Wavelength: 5.21
+Electrons: 21 7
+Positions: 
+    Sc 0 0 0
+    Sc 0.5 0.5 0
+    Sc 0.5 0 0.5
+    Sc 0 0.5 0.5
+    N 0 0.5 0 
+    N 0.5 0 0
+    N 0 0 0.5
+    N 0.5 0.5 0.5
+
+Material: TiN
+Miller: 1 1 1
+Dimensions: 4.24 4.24 4.24
+Angles: 90 90 90
+Wavelength: 4.9
+Electrons: 22 7
+Positions: 
+    Ti 0 0 0
+    Ti 0.5 0.5 0
+    Ti 0.5 0 0.5
+    Ti 0 0.5 0.5
+    N 0 0.5 0 
+    N 0.5 0 0
+    N 0 0 0.5
+    N 0.5 0.5 0.5
+
+Material: VN
+Miller: 1 1 1
+Dimensions: 4.12 4.12 4.12
+Angles: 90 90 90
+Wavelength: 4.76
+Electrons: 23 7
+Positions: 
+    V 0 0 0
+    V 0.5 0.5 0
+    V 0.5 0 0.5
+    V 0 0.5 0.5
+    N 0 0.5 0 
+    N 0.5 0 0
+    N 0 0 0.5
+    N 0.5 0.5 0.5
+
+Material: CrN
+Miller: 1 1 1
+Dimensions: 4.19 4.19 4.19
+Angles: 90 90 90
+Wavelength: 4.84
+Electrons: 24 7
+Positions: 
+    Cr 0 0 0
+    Cr 0.5 0.5 0
+    Cr 0.5 0 0.5
+    Cr 0 0.5 0.5
+    N 0 0.5 0 
+    N 0.5 0 0
+    N 0 0 0.5
+    N 0.5 0.5 0.5
+
+Material: MnN
+Miller: 1 1 1
+Dimensions: 4.14 4.14 4.14
+Angles: 90 90 90
+Wavelength: 4.78
+Electrons: 25 7
+Positions: 
+    Mn 0 0 0
+    Mn 0.5 0.5 0
+    Mn 0.5 0 0.5
+    Mn 0 0.5 0.5
+    N 0 0.5 0 
+    N 0.5 0 0
+    N 0 0 0.5
+    N 0.5 0.5 0.5
+
+Material: FeN
+Miller: 1 1 1
+Dimensions: 4.2 4.2 4.2
+Angles: 90 90 90
+Wavelength: 4.85
+Electrons: 26 7
+Positions: 
+    Fe 0 0 0
+    Fe 0.5 0.5 0
+    Fe 0.5 0 0.5
+    Fe 0 0.5 0.5
+    N 0.25 0.25 0.25
+    N 0.75 0.75 0.25
+    N 0.75 0.25 0.75
+    N 0.25 0.75 0.75
+
+Material: CoN
+Miller: 1 1 1
+Dimensions: 4.22 4.22 4.22
+Angles: 90 90 90
+Wavelength: 4.87
+Electrons: 27 7
+Positions: 
+    Co 0 0 0
+    Co 0.5 0.5 0
+    Co 0.5 0 0.5
+    Co 0 0.5 0.5
+    N 0.25 0.25 0.25
+    N 0.75 0.75 0.25
+    N 0.75 0.25 0.75
+    N 0.25 0.75 0.75
+
+Material: GaN
+Miller: 1 1 1
+Dimensions: 4.27 4.27 4.27
+Angles: 90 90 90
+Wavelength: 4.93
+Electrons: 31 7
+Positions: 
+    Ga 0 0 0
+    Ga 0.5 0.5 0
+    Ga 0.5 0 0.5
+    Ga 0 0.5 0.5
+    N 0.25 0.25 0.25
+    N 0.75 0.75 0.25
+    N 0.75 0.25 0.75
+    N 0.25 0.75 0.75
+
+Material: Sc4C3
+Miller: 1 1 0
+Dimensions: 7.21 7.21 7.21
+Angles: 90 90 90
+Wavelength: 10.20
+Electrons: 21 6
+Positions: 
+    Sc 2 2 2
+    C 2 2 2
+
+Material: Ti2C
+Miller: 1 1 1
+Dimensions: 8.62 8.62 8.62
+Angles: 90 90 90
+Wavelength: 9.95
+Electrons: 22 6
+Positions: 
+    Ti 2 2 2
+    C 2 2 2
+
+Material: Sc2O3
+Miller: 1 1 0
+Dimensions: 9.86 9.86 9.86
+Angles: 90 90 90
+Wavelength: 13.95
+Electrons: 21 8
+Positions: 
+    Sc 2 2 2
+    O 2 2 2
+
+Material: V2O3
+Miller: 1 1 0
+Dimensions: 9.57 9.57 9.57
+Angles: 90 90 90
+Wavelength: 13.54
+Electrons: 23 8
+Positions: 
+    V 2 2 2
+    O 2 2 2
+
+Material: NiO
+Miller: 1 1 1
+Dimensions: 4.19 4.19 4.19
+Angles: 90 90 90
+Wavelength: 4.84
+Electrons: 28 8
+Positions: 
+    Ni 0 0 0
+    Ni 0.5 0.5 0
+    Ni 0.5 0 0.5
+    Ni 0 0.5 0.5
+    O 0 0.5 0 
+    O 0.5 0 0
+    O 0 0 0.5
+    O 0.5 0.5 0.5
+
+Material: Cu2O
+Miller: 1 1 1
+Dimensions: 4.25 4.25 4.25
+Angles: 90 90 90
+Wavelength: 4.91
+Electrons: 29 8
+Positions: 
+    Cu 0.25 0.25 0.25
+    Cu 0.25 0.25 0.75
+    Cu 0.25 0.75 0.25
+    Cu 0.25 0.75 0.75
+    Cu 0.75 0.25 0.25
+    O 0.0 0.0 0.0
+    O 0.0 0.0 0.5
+    O 0.0 0.5 0.0
+    O 0.0 0.5 0.5
+    O 0.5 0.0 0.0
+    O 0.5 0.0 0.5
+    O 0.5 0.5 0.0
+    O 0.5 0.5 0.5
+
+Material: MgO
+Miller: 1 1 1
+Dimensions: 4.19 4.19 4.19
+Angles: 90 90 90
+Wavelength: 4.86
+Electrons: 12 8
+Positions: 
+    Mg 0 0 0
+    Mg 0.5 0.5 0
+    Mg 0.5 0 0.5
+    Mg 0 0.5 0.5
+    O 0 0.5 0 
+    O 0.5 0 0
+    O 0 0 0.5
+    O 0.5 0.5 0.5
+
+Material: CaO
+Miller: 1 1 1
+Dimensions: 4.81 4.81 4.81
+Angles: 90 90 90
+Wavelength: 5.55
+Electrons: 20 8
+Positions: 
+    Ca 0 0 0
+    Ca 0.5 0.5 0
+    Ca 0.5 0 0.5
+    Ca 0 0.5 0.5
+    O 0 0.5 0 
+    O 0.5 0 0
+    O 0 0 0.5
+    O 0.5 0.5 0.5
+
+Material: SrO
+Miller: 1 1 1
+Dimensions: 5.17 5.17 5.17
+Angles: 90 90 90
+Wavelength: 5.97
+Electrons: 38 8
+Positions: 
+    Sr 0 0 0
+    Sr 0.5 0.5 0
+    Sr 0.5 0 0.5
+    Sr 0 0.5 0.5
+    O 0 0.5 0 
+    O 0.5 0 0
+    O 0 0 0.5
+    O 0.5 0.5 0.5
+
+Material: BaO
+Miller: 1 1 1
+Dimensions: 5.58 5.58 5.58
+Angles: 90 90 90
+Wavelength: 6.44
+Electrons: 56 8
+Positions: 
+    Ba 0 0 0
+    Ba 0.5 0.5 0
+    Ba 0.5 0 0.5
+    Ba 0 0.5 0.5
+    O 0 0.5 0 
+    O 0.5 0 0
+    O 0 0 0.5
+    O 0.5 0.5 0.5
+
+Material: Li2O
+Miller: 1 1 1
+Dimensions: 4.26 4.26 4.26
+Angles: 90 90 90
+Wavelength: 4.92
+Electrons: 3 8
+Positions: 
+    Li 0.25 0.75 0.25
+    Li 0.25 0.25 0.75
+    Li 0.25 0.25 0.25
+    Li 0.75 0.25 0.25
+    Li 0.75 0.75 0.25
+    Li 0.75 0.75 0.75
+    Li 0.75 0.25 0.75
+    Li 0.25 0.75 0.75
+    O 0 0 0
+    O 0.5 0 0.5
+    O 0 0.5 0.5
+    O 0.5 0.5 0
+
+Material: La2O3
+Miller: 1 1 0
+Dimensions: 11.36 11.36 11.36
+Angles: 90 90 90
+Wavelength: 16.07
+Electrons: 57 8
+Positions: 
+    La 2 2 2
+    O 2 2 2
+
+Material: Gd2O3
+Miller: 1 1 0
+Dimensions: 10.81 10.81 10.81
+Angles: 90 90 90
+Wavelength: 15.29
+Electrons: 64 8
+Positions: 
+    Gd 2 2 2
+    O 2 2 2
+
+Material: Ho2O3
+Miller: 2 0 0
+Dimensions: 10.61 10.61 10.61
+Angles: 90 90 90
+Wavelength: 10.61
+Electrons: 67 8
+Positions: 
+    Positions: 
+    Ho 0.25 0.25 0.25
+    Ho 0.25 0.25 0.75
+    Ho 0.25 0.75 0.25
+    Ho 0.25 0.75 0.75
+    Ho 0.75 0.25 0.25
+    Ho 0.75 0.25 0.75
+    Ho 0.75 0.75 0.25
+    Ho 0.75 0.75 0.75
+    O 0.39 0.156 0.156
+    O 0.39 -0.156 0.656
+    O 0.39 0.344 0.344
+    O 0.39 0.656 -0.156
+    O 0.89 0.156 0.156
+    O 0.89 -0.156 0.656
+    O 0.89 0.344 0.344
+    O 0.89 0.656 -0.156
+    O -0.39 -0.156 -0.156
+    O -0.39 0.156 0.344
+    O -0.39 0.344 0.156
+    O -0.39 0.656 0.656
+    O -0.11 -0.156 -0.156
+    O -0.11 0.156 0.344
+    O -0.11 0.344 0.156
+    O -0.11 0.656 0.656
+    O -0.39 -0.156 0.156
+    O -0.39 0.156 0.344
+    O -0.39 0.344 -0.156
+    O -0.39 0.656 0.656
+    O 0.11 0.156 -0.156
+    O 0.11 -0.156 0.656
+    O 0.11 0.656 0.344
+    O 0.11 0.344 0.156
+	
+
+
+Material: Lu2O3
+Miller: 1 1 0
+Dimensions: 10.26 10.26 10.26
+Angles: 90 90 90
+Wavelength: 14.51
+Electrons: 71 8
+Positions: 
+    Lu 2 2 2
+    O 2 2 2
+
+Material: La2C3
+Miller: 1 1 0
+Dimensions: 8.83 8.83 8.83
+Angles: 90 90 90
+Wavelength: 12.49
+Electrons: 57 6
+Positions: 
+    La 2 2 2
+    C 2 2 2
+
+Material: Gd2C3
+Miller: 1 1 0
+Dimensions: 8.34 8.34 8.34
+Angles: 90 90 90
+Wavelength: 11.80
+Electrons: 64 6
+Positions: 
+    Gd 2 2 2
+    C 2 2 2
+
+Material: Ho2C3
+Miller: 1 1 0
+Dimensions: 10.52 10.52 10.52
+Angles: 90 90 90
+Electrons: 67 6
+Wavelength: 11.54
+Positions: 
+    Ho 0.5 0.5 0
+    Ho 0.75 0.282321 0.5
+    O 0.370581 0.401594 0.141291
+
+Material: Lu2C3
+Miller: 1 1 0
+Dimensions: 8.01 8.01 8.01
+Angles: 90 90 90
+Wavelength: 11.33
+Electrons: 71 6
+Positions: 
+    Lu 2 2 2
+    C 2 2 2
+
+Material: LaN
+Miller: 1 1 1
+Dimensions: 5.3 5.3 5.3
+Angles: 90 90 90
+Wavelength: 6.12
+Electrons: 57 7
+Positions: 
+    La 0 0 0
+    La 0.5 0.5 0
+    La 0.5 0 0.5
+    La 0 0.5 0.5
+    N 0 0.5 0 
+    N 0.5 0 0
+    N 0 0 0.5
+    N 0.5 0.5 0.5
+
+Material: GdN
+Miller: 1 1 1
+Dimensions: 4.98 4.98 4.98
+Angles: 90 90 90
+Wavelength: 5.75
+Electrons: 64 7
+Positions: 
+    Gd 0 0 0
+    Gd 0.5 0.5 0
+    Gd 0.5 0 0.5
+    Gd 0 0.5 0.5
+    N 0 0.5 0 
+    N 0.5 0 0
+    N 0 0 0.5
+    N 0.5 0.5 0.5
+
+Material: HoN
+Miller: 1 1 1
+Dimensions: 4.86 4.86 4.86
+Angles: 90 90 90
+Wavelength: 5.61
+Electrons: 67 7
+Positions: 
+    Ho 0 0 0
+    Ho 0.5 0.5 0
+    Ho 0.5 0 0.5
+    Ho 0 0.5 0.5
+    N 0 0.5 0 
+    N 0.5 0 0
+    N 0 0 0.5
+    N 0.5 0.5 0.5
+
+Material: LuN
+Miller: 1 1 1
+Dimensions: 4.72 4.72 4.72
+Angles: 90 90 90
+Wavelength: 5.45
+Electrons: 71 7
+Positions: 
+    Lu 0 0 0
+    Lu 0.5 0.5 0
+    Lu 0.5 0 0.5
+    Lu 0 0.5 0.5
+    N 0 0.5 0 
+    N 0.5 0 0
+    N 0 0 0.5
+    N 0.5 0.5 0.5
+
+
+Material: LaCoO3
+Miller: 1 0 0
+Dimensions: 3.82 3.82 3.82
+Angles: 90 90 90
+Wavelength: 7.64
+Electrons: 47 27 8
+Positions: 
+    La 0 0 0
+    Co 0.5 0.5 0.5
+    O 0.5 0.5 0
+    O 0.5 0 0.5
+    O 0 0.5 0.5
+
